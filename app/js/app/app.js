@@ -33,7 +33,8 @@ define([
 
   // Dynamically add our element for the Backbone.js view
   // (Usually done in actual HTML).
-    $("<div class='hello' />").appendTo($("body"));
+    $("<div class='sidebar' />").appendTo($("body"));
+    $("<div class='bodyContent' />").appendTo($("body"));
   // --------------------------------------------------------------------------
   // Application Bootstrap
   // --------------------------------------------------------------------------

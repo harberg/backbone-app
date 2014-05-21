@@ -8,7 +8,7 @@ define([
         EmployeeView
     ) {
     var EmployeesView = Backbone.View.extend({
-        el: ".hello",
+        el: ".sidebar",
         template: employeesTmpl,
         initialize: function () {
             this.listenTo(this.collection, "change", this.render);

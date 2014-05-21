@@ -6,7 +6,7 @@ define([
         employeeSingleTmpl
     ) {
     var EmployeeSingleView = Backbone.View.extend({
-        el: ".hello",
+        el: ".bodyContent",
         template: employeeSingleTmpl,
         initialize: function () {
             this.listenTo(this.model, "change", this.render);

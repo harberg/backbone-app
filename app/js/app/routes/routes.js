@@ -14,7 +14,7 @@ define([
     var EmployeeRouter = Backbone.Router.extend({
         routes: {
             "" : "index",
-            "employees/:id": "show",
+            //"employees/:id": "show",
         },
         start: function() {
             Backbone.history.start();
@@ -51,7 +51,6 @@ define([
             this.nickView = new EmployeesView({
                 collection: this.employeesCollection
             });
-            console.dir(this.employeesCollection);
         },
         show: function(id) {
             this.employeeSingleView = new EmployeeSingleView({

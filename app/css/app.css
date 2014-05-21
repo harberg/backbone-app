@@ -154,3 +154,17 @@ textarea#input-text {
 .navbar-nav.navbar-right {
   float: right;
 }
+
+
+/* Added Styles for Employee app */
+.bodyContent {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+
+}
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+}
