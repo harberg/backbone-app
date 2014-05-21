@@ -1,9 +1,13 @@
 define([
         "backbone",
-        "hbs!app/templates/employee"
+        "hbs!app/templates/employee",
+        "../views/employeeSingle",
+        "../collections/employees"
     ], function(
         Backbone,
-        employeeTmpl
+        employeeTmpl,
+        EmployeeSingleView,
+        EmployeesCollection
     ) {
     var EmployeeView = Backbone.View.extend({
         template: employeeTmpl,
@@ -17,10 +21,11 @@ define([
             this.$el.html(this.template(this.model.toJSON()));
             return this;
         },
-        buttonClickHandler : function (id) {
+        buttonClickHandler : function () {
             //this.$el.css("background-color", "yellow");
+
             this.employeeSingleView = new EmployeeSingleView({
-                model: this.employeesCollection.get(id)
+                model: this.model
             });
         }
     });
