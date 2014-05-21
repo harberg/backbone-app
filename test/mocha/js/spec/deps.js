@@ -6,5 +6,5 @@
  */
 define([
   "spec/models/employee.spec",
-  //"spec/collections/employees.spec"
+  "spec/collections/employees.spec"
 ]);

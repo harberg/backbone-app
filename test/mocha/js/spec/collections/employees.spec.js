@@ -4,10 +4,10 @@
 define(["app/collections/employees"], function(EmployeesCollection) {
 
     describe("app/collections/employees", function() {
-        var employeesCollection = new EmployeesCollection();
 
         it("is defined", function() {
-            expect(employeesCollection.length().to.equal(4));
+            var employeesCollection = new EmployeesCollection();
+            expect(employeesCollection).to.be.a('object');
         });
 
     });
