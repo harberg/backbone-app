@@ -20,8 +20,8 @@
     // See: http://requirejs.org/docs/api.html#config-shim
     shim: {
       "jquery": {
-        exports: "$"
-      }
+        exports: "$",
+      },
     },
 
     // Maps: Specify aliases and specific libraries for plugins.
