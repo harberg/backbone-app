@@ -38,12 +38,12 @@ define([
     var EmployeeRouter = Backbone.Router.extend({
         routes: {
             "" : "index",
-            //"employees/:id": "show",
+            "employees/:id": "show",
         },
         start: function() {
             Backbone.history.start();
         },
-        index: function() {
+        initialize: function() {
             this.collection = new Backbone.Collection;
             this.collection.reset(DATA);
 
@@ -51,9 +51,13 @@ define([
                 collection: this.collection
             });
         },
+        index: function() {
+
+        },
         show: function(id) {
+            console.log(id);
             this.employeeSingleView = new EmployeeSingleView({
-                model: this.employeesCollection.get(id)
+                model: this.collection.get(id)
             });
         }
     });

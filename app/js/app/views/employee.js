@@ -12,7 +12,7 @@ define([
     var EmployeeView = Backbone.View.extend({
         template: employeeTmpl,
         events: {
-            "click .btn": "buttonClickHandler"
+            //"click .btn": "buttonClickHandler"
         },
         initialize: function () {
             this.listenTo(this.model, "change", this.render);
